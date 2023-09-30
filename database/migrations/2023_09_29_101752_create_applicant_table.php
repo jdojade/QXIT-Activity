@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('first_name', 100);
             $table->string('middle_name', 100);
             $table->string('last_name', 100);
-            $table->date('birthdate');
+            $table->date('birth_date');
             $table->string('gender', 10);
             $table->string('cellphone_no', 20);
             $table->string('address', 150)->nullable();
