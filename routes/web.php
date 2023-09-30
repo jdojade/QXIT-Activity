@@ -19,4 +19,18 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+// Homepage
 Route::get('/', [ApplicantController::class, 'index'])->name('homepage');
+
+// Add Data Page
+Route::get('/add-applicant', [ApplicantController::class, 'addApplicant'])->name('add-applicant.index');
+// Add Data Perform
+Route::post('/add-applicant/perform', [ApplicantController::class, 'addApplicantPerform'])->name('add-applicant.perform');
+
+// Edit Data Page
+Route::get('/edit-applicant/{id}', [ApplicantController::class, 'editApplicant'])->name('edit-applicant.show');
+// Edit Data Perform
+Route::post('/edit-applicant/perform/{id}', [ApplicantController::class, 'editApplicantPerform'])->name('edit-applicant.perform');
+
+// Drop Data Perform
+Route::delete('/delete-applicant/perform/{id}', [ApplicantController::class, 'destroyData'])->name('delete-applicant.perform');

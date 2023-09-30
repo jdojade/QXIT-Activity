@@ -14,7 +14,7 @@ class Applicant extends Model
     ['first_name',
      'middle_name',
      'last_name',
-     'birthdate',
+     'birth_date',
      'gender',
      'cellphone_no',
      'address',];

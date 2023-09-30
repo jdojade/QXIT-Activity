@@ -1,1 +1,1 @@
-<button type="{!! $type !!}" class="btn btn-{!! $style !!}">{!! $label !!}</button>
+<button type="{!! $type !!}" class="btn btn-{!! $style !!}" {!! $customAttributes ?? '' !!}>{!! $label !!}</button>
